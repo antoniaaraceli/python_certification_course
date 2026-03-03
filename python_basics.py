@@ -79,3 +79,12 @@ joined_str = ' '.join(my_gretting)
 #print(str.lower().title()) # Hola Mundo
 
 
+### Conditional Statements and Logical Operators 
+## if statement
+age = 12
+if age >= 18:
+    print('Enjoy your drinks!')
+elif age >= 12:
+    print('Soda for you!')
+else:
+    print('There is some juice for you')
