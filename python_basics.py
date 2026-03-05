@@ -1,5 +1,12 @@
 # This notes are taken by me for the Python Certification Course by FreeCodeCamp.
 
+#### Python Basics
+### What is Python?
+""" 
+Introduction: Python is a general-purpose programming language known for its simplicity and ease of use. Python is used in many fields like data science and machine learning, web development, scripting and automation, embedded systems and IoT, and much more.
+Common Use Cases: Python is used in data science, machine learning, web development, cybersecurity, automation and microcomputers like the Raspberry Pi and MicroPython-compatible boards. 
+"""
+
 #### VARIABLES & DATA TYPES
 
 #### STRINGS
