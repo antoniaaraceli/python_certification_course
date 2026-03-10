@@ -158,10 +158,52 @@
 #     print(f'Index {index} and language {language}')
 
 # The zip() function combines lists into pairs of elements and returns an iterator of tuples
-developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
-ids = [1, 2, 3, 4]
-print(list(zip(developers, ids))) # [('Naomi', 1), ('Dario', 2), ('Jessica', 3), ('Tom', 4)]
+# developers = ['Naomi', 'Dario', 'Jessica', 'Tom']
+# ids = [1, 2, 3, 4]
+# print(list(zip(developers, ids))) # [('Naomi', 1), ('Dario', 2), ('Jessica', 3), ('Tom', 4)]
 
-for name, id in zip(developers, ids):
-    print(f'Name: {name}')
-    print(f'ID: {id}')
+# for name, id in zip(developers, ids):
+#     print(f'Name: {name}')
+#     print(f'ID: {id}')
+
+# List comprehension allows you to create a new list in a single line by combining a loop and condition directly within square brackets.
+# even_numbers = [num for num in range(21) if num % 2 == 0]
+# print(even_numbers)
+
+# numbers = [1, 2, 3, 4, 5]
+# result = [(num, 'Even') if num % 2 == 0 else (num, 'Odd') for num in numbers]
+# print(result)
+
+# # filter() function is used to select elements from an iterable that meet a specific condition
+# words = ['tree', 'sky', 'mountain', 'river', 'cloud', 'sun']
+
+# def is_long_word(word):
+#     return len(word) > 4
+
+# long_words = list(filter(is_long_word, words))
+# print(long_words) # ['mountain', 'river', 'cloud']
+
+# # map() function takes an iterable and applies a function to each of its elements
+# celsius = [0, 10, 20, 30, 40]
+
+# def to_fahrenheit(temp):
+#     return (temp * 9/5) + 32
+
+# fahrenheit = list(map(to_fahrenheit, celsius))
+# print(fahrenheit) # [32.0, 50.0, 68.0, 86.0, 104.0]
+
+# # sum() function is used to get the sum from an iterable like a list or tuple
+# total = sum(celsius)
+# print(total)
+
+# print(sum(celsius, 10)) # positional argument
+
+# Lambda Functions
+# square() function looks like --> lambda num: num ** 2
+
+numbers = [1, 2, 3, 4, 5]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # [2, 4]
+
+# best practices
+# it is not a good practice to assign a lambda function to a variable
