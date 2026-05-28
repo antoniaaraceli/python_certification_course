@@ -109,3 +109,27 @@
 #     result = calculate_square_root(-4)
 # except AssertionError as e:
 #     print(f'Assertion failed: {e}')
+
+## RESUME
+# Common Errors in Python
+# SyntaxError: raises when your code does not follow its syntax rules.
+# NameError: raises a NameError when you try to access a variable or function you have not defined.
+# TypeError: throws when you perform an operation on two or more incompatible data types.
+# IndexError: if you access an index that does not exist in a list or other sequences like tuple and string. 
+# AttributeError: raises this error when you try to use a method or property that does not exist in an object of that type.
+
+# Good Debugging Techniques
+# Using the print function: Inserting print() statements around various points in your code while debugging helps you see the values of variables and how your code flows.
+# Using Python's Built-in Debugger (pdb): It's a part of the Python's standard library, so it's always available to use. With pdb, you can set a trace with the set_trace() function so you can start stepping through the code and inspect variables in an interactive way.
+# Leveraging IDE Debugging Tools: Many integrated development environments (IDEs) and code editors offer debugging tools with breakpoints, step execution, variable inspection, and other debugging features.
+
+# Exception Handling
+# try...except: This is used to execute a block of code that might raise an exception. The try block is where you anticipate an error might occur, while the except block takes a specified exception and runs if that specified error is raised.
+# You can also chain multiple except blocks so you can handle more types of exceptions.
+# else and finally: These blocks extend try...except. If no exception occurs, the else block runs. The finally block always runs regardless of errors.
+# Exception Object: This lets you access the exception itself for better debugging and printing the direct error message. To access the exception object, you need to use the as keyword. 
+# The raise Statement: This allows you to manually raise an exception. You can use it to throw an exception when a certain condition is met.
+
+# Exception Signaling
+# The raise statement is also useful when you create your own custom exceptions, as you can use it to throw an exception with a custom message.
+# The raise statement can also be used with the from keyword to chain exceptions, showing the relationship between different errors

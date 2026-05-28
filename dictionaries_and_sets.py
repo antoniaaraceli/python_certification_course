@@ -9,7 +9,7 @@
 # # using the dict() constructor
 # pizza_const = dict([('name', 'Margherita Pizza'), ('price', 8.9), ('calories_per_slice', 250), ('toppings', ['mozzarella', 'basil'])])
 
-# print(pizza['name'])
+# print(pizza['toppings'])
 
 # pizza['name'] = 'Margherita'
 # print(pizza['name'])
@@ -23,26 +23,26 @@
 
 # pizza.items() # returns a view object with all the key-value pairs in the dictionary
 # pizza.clear() # removes all the key-value pairs from the dictionary
-# print(pizza.pop('price', 10)) # removes the key-value pair with the key that you specify as the first argument and returns its value
+# print(pizza.pop('total_price', 0)) # removes the key-value pair with the key that you specify as the first argument and returns its value
 # # pizza.pop('total_price') # KeyError
 # pizza.popitem() # removes the last inserted item
 # pizza.update({ 'price': 15, 'total_time': 25 })
 
 # Techniques to Loop Over a Dictionary
-# products = {
-#     'Laptop': 990,
-#     'Smartphone': 600,
-#     'Tablet': 250,
-#     'Headphones': 70,
-# }
+products = {
+    'Laptop': 990,
+    'Smartphone': 600,
+    'Tablet': 250,
+    'Headphones': 70,
+}
 
 # for product, price in products.items():
 #     products[product] = round(price * 0.8)
     
 # print(products)
 
-# for product in enumerate(products):
-#     print(product) # iterate over the key-value pairs while keeping track of a counter
+for index, product in enumerate(products, 1):
+    print(index, product) # iterate over the key-value pairs while keeping track of a counter
 
 # SETS -> they don't store duplicate values, are mutable and unordered.
 # To define a set, you just need to write its elements within curly braces and separate them with commas.
@@ -73,12 +73,12 @@
 
 # A regular expression, or regex, is a pattern used to match a sequence of characters in text. The search function from the re module takes a regex pattern and a string as its arguments.
 
-products = {
-    'Laptop': 990,
-    'Smartphone': 600,
-    'Tablet': 250,
-    'Headphones': 70,
-}
+# products = {
+#     'Laptop': 990,
+#     'Smartphone': 600,
+#     'Tablet': 250,
+#     'Headphones': 70,
+# }
 
-for product in products.items():
-    print(product)
+# for product in products.items():
+#     print(product)
